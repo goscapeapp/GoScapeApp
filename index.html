@@ -6,12 +6,18 @@
 
     <title>GoScape Privacy Policy</title>
 
-    <meta name="description"
-          content="GoScape Privacy Policy - Learn how GoScape handles location and other information.">
+    <meta
+        name="description"
+        content="GoScape Privacy Policy - Learn how GoScape handles location and other information."
+    >
 
     <style>
         * {
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -23,8 +29,36 @@
             line-height: 1.7;
         }
 
+        /* =========================
+           FEATURE GRAPHIC
+           ========================= */
+
+        .feature-graphic {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            line-height: 0;
+            background: #ffffff;
+        }
+
+        .feature-graphic img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* =========================
+           HEADER
+           ========================= */
+
         .header {
-            background: linear-gradient(135deg, #00c9ff, #00a6b8);
+            background: linear-gradient(
+                135deg,
+                #00c9ff,
+                #00a6b8
+            );
             color: white;
             padding: 48px 20px;
             text-align: center;
@@ -36,12 +70,14 @@
             object-fit: cover;
             border-radius: 22px;
             margin-bottom: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
         .header h1 {
             margin: 0;
             font-size: 36px;
             font-weight: 700;
+            letter-spacing: -0.5px;
         }
 
         .header p {
@@ -49,6 +85,10 @@
             font-size: 16px;
             opacity: 0.95;
         }
+
+        /* =========================
+           MAIN CONTENT
+           ========================= */
 
         .container {
             max-width: 850px;
@@ -68,10 +108,18 @@
             margin-top: 32px;
             margin-bottom: 12px;
             font-size: 23px;
+            line-height: 1.35;
         }
 
         h2:first-child {
             margin-top: 0;
+        }
+
+        h3 {
+            color: #37474f;
+            margin-top: 25px;
+            margin-bottom: 8px;
+            font-size: 18px;
         }
 
         p {
@@ -92,6 +140,10 @@
             margin-bottom: 25px;
         }
 
+        /* =========================
+           CONTACT BOX
+           ========================= */
+
         .contact {
             background: #eefafd;
             border-left: 4px solid #00a6b8;
@@ -109,6 +161,10 @@
             text-decoration: underline;
         }
 
+        /* =========================
+           FOOTER
+           ========================= */
+
         .footer {
             text-align: center;
             color: #78909c;
@@ -116,13 +172,48 @@
             padding: 30px 20px 45px;
         }
 
+        /* =========================
+           TABLET
+           ========================= */
+
+        @media (max-width: 900px) {
+
+            .feature-graphic {
+                max-width: 100%;
+            }
+
+            .container {
+                max-width: 760px;
+            }
+        }
+
+        /* =========================
+           MOBILE
+           ========================= */
+
         @media (max-width: 600px) {
+
+            .feature-graphic {
+                width: 100%;
+                border-radius: 0;
+            }
+
             .header {
                 padding: 35px 15px;
             }
 
+            .logo {
+                width: 78px;
+                height: 78px;
+                border-radius: 18px;
+            }
+
             .header h1 {
                 font-size: 30px;
+            }
+
+            .header p {
+                font-size: 15px;
             }
 
             .container {
@@ -138,222 +229,244 @@
             h2 {
                 font-size: 21px;
             }
+
+            h3 {
+                font-size: 17px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header class="header">
+    <!-- =========================
+         GOSCAPE FEATURE GRAPHIC
+         ========================= -->
 
-    <!--
-        Optional:
-        If you have your GoScape icon, place it in the same folder
-        and name it "icon.png".
-    -->
-
-    <img
-        src="icon.png"
-        alt="GoScape App Icon"
-        class="logo"
-    >
-
-    <h1>GoScape</h1>
-
-    <p>Discover Local. Live More.</p>
-
-</header>
+    <div class="feature-graphic">
+        <img
+            src="feature_graphic.png"
+            alt="GoScape - Discover Local. Live More."
+        >
+    </div>
 
 
-<main class="container">
+    <!-- =========================
+         GOSCAPE HEADER
+         ========================= -->
 
-    <div class="card">
+    <header class="header">
 
-        <p class="effective-date">
-            <strong>Effective Date:</strong> September 26, 2026
-        </p>
+        <img
+            src="icon.png"
+            alt="GoScape App Icon"
+            class="logo"
+        >
 
+        <h1>GoScape</h1>
 
-        <h2>1. Introduction</h2>
+        <p>Discover Local. Live More.</p>
 
-        <p>
-            GoScape ("we", "our", or "the app") respects your privacy.
-            This Privacy Policy explains how GoScape handles information
-            when you use the GoScape mobile application.
-        </p>
-
-
-        <h2>2. Information We Collect</h2>
-
-        <h3>Location Information</h3>
-
-        <p>
-            GoScape may request access to your device's location to provide
-            location-based travel features, including:
-        </p>
-
-        <ul>
-            <li>Finding tourist attractions and places near you.</li>
-            <li>Providing location-based recommendations.</li>
-            <li>Helping you plan trips and routes.</li>
-        </ul>
-
-        <p>
-            Location information used for these features is processed on
-            your device and is not stored by GoScape as a personal
-            location history.
-        </p>
-
-        <p>
-            You can disable location permission through your device settings.
-            Some location-based features may not function correctly without
-            location access.
-        </p>
+    </header>
 
 
-        <h3>Personal Information</h3>
+    <!-- =========================
+         PRIVACY POLICY
+         ========================= -->
 
-        <p>
-            GoScape does not require you to create an account or provide
-            personal information such as your name, phone number, or email
-            address to use the application.
-        </p>
+    <main class="container">
 
+        <div class="card">
 
-        <h2>3. Information We Do Not Collect</h2>
-
-        <p>
-            GoScape does not intentionally collect or store:
-        </p>
-
-        <ul>
-            <li>Names</li>
-            <li>Phone numbers</li>
-            <li>Email addresses</li>
-            <li>Passwords</li>
-            <li>Precise location history</li>
-            <li>Contacts</li>
-            <li>Photos or videos from your device</li>
-            <li>Financial or payment information</li>
-        </ul>
-
-        <p>
-            GoScape does not currently use advertising or analytics SDKs.
-        </p>
+            <p class="effective-date">
+                <strong>Effective Date:</strong> September 26, 2026
+            </p>
 
 
-        <h2>4. Third-Party Services</h2>
-
-        <p>
-            GoScape may communicate with third-party services and APIs to
-            provide travel information, maps, images, and other
-            destination-related content.
-        </p>
-
-        <p>
-            These services may receive information necessary to fulfill
-            the requested functionality. Their handling of information
-            is governed by their respective privacy policies.
-        </p>
-
-        <p>
-            GoScape does not sell your personal information.
-        </p>
-
-
-        <h2>5. Data Storage</h2>
-
-        <p>
-            GoScape does not maintain a personal user account database.
-        </p>
-
-        <p>
-            Location information used for location-based functionality is
-            processed on the user's device and is not retained by GoScape
-            as a personal location history.
-        </p>
-
-        <p>
-            Saved trip information, where applicable, may be stored locally
-            on your device.
-        </p>
-
-
-        <h2>6. Data Security</h2>
-
-        <p>
-            We take reasonable measures to protect information handled by
-            the application. However, no electronic transmission or storage
-            system can be guaranteed to be completely secure.
-        </p>
-
-
-        <h2>7. Children's Privacy</h2>
-
-        <p>
-            GoScape is a general travel and discovery application.
-            It does not knowingly collect personal information from children.
-        </p>
-
-        <p>
-            If you believe that a child has provided personal information
-            to GoScape, please contact us using the email address below.
-        </p>
-
-
-        <h2>8. Your Choices</h2>
-
-        <p>
-            You can control location access through your device's Android
-            settings.
-        </p>
-
-        <p>
-            You may also stop using the application or uninstall it at
-            any time.
-        </p>
-
-
-        <h2>9. Changes to This Privacy Policy</h2>
-
-        <p>
-            We may update this Privacy Policy when GoScape's functionality
-            or data practices change.
-        </p>
-
-        <p>
-            Any updated version will include a revised effective date.
-        </p>
-
-
-        <h2>10. Contact Us</h2>
-
-        <div class="contact">
+            <h2>1. Introduction</h2>
 
             <p>
-                If you have questions about this Privacy Policy or
-                GoScape's privacy practices, contact us:
+                GoScape ("we", "our", or "the app") respects your privacy.
+                This Privacy Policy explains how GoScape handles information
+                when you use the GoScape mobile application.
+            </p>
+
+
+            <h2>2. Information We Collect</h2>
+
+            <h3>Location Information</h3>
+
+            <p>
+                GoScape may request access to your device's location to provide
+                location-based travel features, including:
+            </p>
+
+            <ul>
+                <li>Finding tourist attractions and places near you.</li>
+                <li>Providing location-based recommendations.</li>
+                <li>Helping you plan trips and routes.</li>
+            </ul>
+
+            <p>
+                Location information used for these features is processed on
+                your device and is not stored by GoScape as a personal
+                location history.
             </p>
 
             <p>
-                <strong>Email:</strong>
-                <a href="mailto:goscapeapp@gmail.com">
-                    goscapeapp@gmail.com
-                </a>
+                You can disable location permission through your device settings.
+                Some location-based features may not function correctly without
+                location access.
             </p>
+
+
+            <h3>Personal Information</h3>
+
+            <p>
+                GoScape does not require you to create an account or provide
+                personal information such as your name, phone number, or email
+                address to use the application.
+            </p>
+
+
+            <h2>3. Information We Do Not Collect</h2>
+
+            <p>
+                GoScape does not intentionally collect or store:
+            </p>
+
+            <ul>
+                <li>Names</li>
+                <li>Phone numbers</li>
+                <li>Email addresses</li>
+                <li>Passwords</li>
+                <li>Precise location history</li>
+                <li>Contacts</li>
+                <li>Photos or videos from your device</li>
+                <li>Financial or payment information</li>
+            </ul>
+
+            <p>
+                GoScape does not currently use advertising or analytics SDKs.
+            </p>
+
+
+            <h2>4. Third-Party Services</h2>
+
+            <p>
+                GoScape may communicate with third-party services and APIs to
+                provide travel information, maps, images, and other
+                destination-related content.
+            </p>
+
+            <p>
+                These services may receive information necessary to fulfill
+                the requested functionality. Their handling of information
+                is governed by their respective privacy policies.
+            </p>
+
+            <p>
+                GoScape does not sell your personal information.
+            </p>
+
+
+            <h2>5. Data Storage</h2>
+
+            <p>
+                GoScape does not maintain a personal user account database.
+            </p>
+
+            <p>
+                Location information used for location-based functionality is
+                processed on the user's device and is not retained by GoScape
+                as a personal location history.
+            </p>
+
+            <p>
+                Saved trip information, where applicable, may be stored locally
+                on your device.
+            </p>
+
+
+            <h2>6. Data Security</h2>
+
+            <p>
+                We take reasonable measures to protect information handled by
+                the application. However, no electronic transmission or storage
+                system can be guaranteed to be completely secure.
+            </p>
+
+
+            <h2>7. Children's Privacy</h2>
+
+            <p>
+                GoScape is a general travel and discovery application.
+                It does not knowingly collect personal information from children.
+            </p>
+
+            <p>
+                If you believe that a child has provided personal information
+                to GoScape, please contact us using the email address below.
+            </p>
+
+
+            <h2>8. Your Choices</h2>
+
+            <p>
+                You can control location access through your device's Android
+                settings.
+            </p>
+
+            <p>
+                You may also stop using the application or uninstall it at
+                any time.
+            </p>
+
+
+            <h2>9. Changes to This Privacy Policy</h2>
+
+            <p>
+                We may update this Privacy Policy when GoScape's functionality
+                or data practices change.
+            </p>
+
+            <p>
+                Any updated version will include a revised effective date.
+            </p>
+
+
+            <h2>10. Contact Us</h2>
+
+            <div class="contact">
+
+                <p>
+                    If you have questions about this Privacy Policy or
+                    GoScape's privacy practices, contact us:
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:goscapeapp@gmail.com">
+                        goscapeapp@gmail.com
+                    </a>
+                </p>
+
+            </div>
 
         </div>
 
-    </div>
-
-</main>
+    </main>
 
 
-<footer class="footer">
+    <!-- =========================
+         FOOTER
+         ========================= -->
 
-    © 2026 GoScape. All rights reserved.
+    <footer class="footer">
 
-</footer>
+        © 2026 GoScape. All rights reserved.
+
+    </footer>
 
 </body>
 </html>
